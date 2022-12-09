@@ -33,14 +33,14 @@
 		<tr>
 	{#if avatar}
     <td style="vertical-align: top; padding: 25px 20px 0 10px;" valign="top" width="1"><a href="https://jensen-partners.com"><img src="{avatar}" width="50" alt="logo" class="mask mask-circle"/></a><br /><br />
-    <a href="http://twitter.com/JensenPartners" target="_blank" rel="noreferrer"><img alt="twitter logo" src="./src/images/twitter-circle-filled.svg" style="width: 20px; vertical-align: bottom; padding-right: 1px; padding-top: 2px; padding-bottom: 2px; display: inline-block;" width="20" /></a> 
-    <a href="http://linkedin.com/company/jensen-partners" target="_blank" rel="noreferrer"><img alt="linkedin logo" src="./src/images/linkedin-with-circle.svg" style="width: 20px; vertical-align: bottom; padding-right: 1px; padding-top: 2px; padding-bottom: 2px; display: inline-block;" width="20" /></a>
+    <a href="http://twitter.com/JensenPartners" target="_blank" rel="noreferrer"><img alt="twitter logo" src="images/twitter-circle-filled.svg" style="width: 20px; vertical-align: bottom; padding-right: 1px; padding-top: 2px; padding-bottom: 2px; display: inline-block;" width="20" /></a> 
+    <a href="http://linkedin.com/company/jensen-partners" target="_blank" rel="noreferrer"><img alt="linkedin logo" src="images/linkedin-with-circle.svg" style="width: 20px; vertical-align: bottom; padding-right: 1px; padding-top: 2px; padding-bottom: 2px; display: inline-block;" width="20" /></a>
     <br /><br />
     </td>
     {:else}
-    <td style="vertical-align: top; padding: 25px 20px 0 10px;" valign="top" width="1"><a href="https://jensen-partners.com"><img src="./src/images/jp-logo.svg" width="50" alt="logo"/></a><br /><br />
-    <a href="http://twitter.com/JensenPartners" target="_blank" rel="noreferrer"><img alt="twitter logo" src="./src/images/twitter-circle-filled.svg" style="width: 20px; vertical-align: bottom; padding-right: 1px; padding-top: 2px; padding-bottom: 2px; display: inline-block;" width="20" /></a> 
-    <a href="http://linkedin.com/company/jensen-partners" target="_blank" rel="noreferrer"><img alt="linkedin logo" src="./src/images/linkedin-with-circle.svg" style="width: 20px; vertical-align: bottom; padding-right: 1px; padding-top: 2px; padding-bottom: 2px; display: inline-block;" width="20" /></a>
+    <td style="vertical-align: top; padding: 25px 20px 0 10px;" valign="top" width="1"><a href="https://jensen-partners.com"><img src="images/jp-logo.svg" width="50" alt="logo"/></a><br /><br />
+    <a href="http://twitter.com/JensenPartners" target="_blank" rel="noreferrer"><img alt="twitter logo" src="images/twitter-circle-filled.svg" style="width: 20px; vertical-align: bottom; padding-right: 1px; padding-top: 2px; padding-bottom: 2px; display: inline-block;" width="20" /></a> 
+    <a href="http://linkedin.com/company/jensen-partners" target="_blank" rel="noreferrer"><img alt="linkedin logo" src="images/linkedin-with-circle.svg" style="width: 20px; vertical-align: bottom; padding-right: 1px; padding-top: 2px; padding-bottom: 2px; display: inline-block;" width="20" /></a>
     <br /><br />
     </td>
     {/if}
@@ -67,7 +67,7 @@
 			</td>
 		</tr>
 		<tr>
-			<td colspan="2"><img src="./src/images/signature-awards.png" alt="banner" class="banner" />
+			<td colspan="2"><img src="images/signature-awards.png" alt="banner" class="banner" />
         </td>
 		</tr>
 	</tbody>

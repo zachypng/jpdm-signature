@@ -42,7 +42,7 @@
 	<td style="vertical-align: top; padding: 50px 20px 0 10px;" valign="top" width="1"><a href="https://jensendiversitymetrics.com"><img src="{avatar}" width="50" alt="logo" class="mask mask-circle"/></a>
     </td>
     {:else}
-    <td style="vertical-align: top; padding: 50px 20px 0 10px;" valign="top" width="1"><a href="https://jensendiversitymetrics.com"><img src="./src/images/jdm-logo-simple.png" width="50" alt="logo"/></a>
+    <td style="vertical-align: top; padding: 50px 20px 0 10px;" valign="top" width="1"><a href="https://jensendiversitymetrics.com"><img src="images/jdm-logo-simple.png" width="50" alt="logo"/></a>
     </td>
     {/if}
       <td style="vertical-align: top;" valign="top">
@@ -60,8 +60,8 @@
 						<br />
                         <hr>
                         <br />
-                            <a href="https://twitter.com/diversitymetric" target="_blank" rel="noreferrer"><img alt="twitter logo" src="./src/images/twitter-circle-filled.svg" style="width: 20px; vertical-align: bottom; padding-right: 1px; padding-top: 2px; padding-bottom: 2px; display: inline-block;" width="20" /></a> 
-                            <a href="https://www.linkedin.com/company/jensendiversitymetrics/" target="_blank" rel="noreferrer"><img alt="linkedin logo" src="./src/images/linkedin-with-circle.svg" style="width: 20px; vertical-align: bottom; padding-right: 1px; padding-top: 2px; padding-bottom: 2px; display: inline-block;" width="20" /></a>
+                            <a href="https://twitter.com/diversitymetric" target="_blank" rel="noreferrer"><img alt="twitter logo" src="images/twitter-circle-filled.svg" style="width: 20px; vertical-align: bottom; padding-right: 1px; padding-top: 2px; padding-bottom: 2px; display: inline-block;" width="20" /></a> 
+                            <a href="https://www.linkedin.com/company/jensendiversitymetrics/" target="_blank" rel="noreferrer"><img alt="linkedin logo" src="images/linkedin-with-circle.svg" style="width: 20px; vertical-align: bottom; padding-right: 1px; padding-top: 2px; padding-bottom: 2px; display: inline-block;" width="20" /></a>
                         <br />
                     </td>
 					</tr>
