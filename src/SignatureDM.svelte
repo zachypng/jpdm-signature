@@ -1,0 +1,62 @@
+<script>
+    import { onMount } from 'svelte';
+    
+    export let company = 'Jensen DiversityMetrics™';
+    export let fullname;
+    export let title;
+    export let email;
+    export let phone;
+
+    function copySigDM() {
+    onMount(() => {
+            let data = document.querySelector('#sigDM');
+		    data.select();
+		    document.execCommand('copy');
+	});
+    };
+    
+</script>
+
+<style>
+    img {
+        height: revert;
+        max-width: revert;
+    }
+
+    a {
+        text-decoration: underline;
+        color: #143954;
+    }
+</style>
+
+<table border="0" cellpadding="0" cellspacing="0" style="width: auto; font-family: arial; font-size: 13px; line-height: 18px; color: #333333; text-decoration: none;" width="auto">
+	<tbody>
+	<tr>
+	<td style="vertical-align: top; padding: 50px 20px 0 10px;" valign="top" width="1"><a href="https://jensendiversitymetrics.com"><img src="https://i.imgur.com/LaS6eMe.png" width="50" alt="logo"/></a>
+    </td>
+      <td style="vertical-align: top;" valign="top">
+			<table border="0" cellpadding="0" cellspacing="0" style="vertical-align: top;" valign="top" width="auto">
+				<tbody>
+					<tr style="vertical-align: top;" valign="top">
+						<td><b style="font-style:italic; font-size: larger;">{fullname}</b><br />
+                        <span>{title} at {company}</span><br />
+						<br />
+						Email: {email}<br />
+						Phone: +1 212-457-0062 | Mobile: {phone}<br />
+						<br />
+						200 Park Avenue, Suite 1700 New York, NY 10166<br />
+                        <a href="https://jensendiversitymetrics.com">jensendiversitymetrics.com</a><br />
+						<br />
+                        <hr>
+                        <br />
+                            <a href="https://twitter.com/diversitymetric" target="_blank" rel="noreferrer"><img alt="twitter" src="https://i.imgur.com/3h6pPIg.png" style="width: 20px; vertical-align: bottom; padding-right: 1px; padding-top: 2px; padding-bottom: 2px; display: inline-block;" width="20" /></a> 
+                            <a href="https://www.linkedin.com/company/jensendiversitymetrics/" target="_blank" rel="noreferrer"><img alt="linkedin" src="https://i.imgur.com/skVLCU6.png" style="width: 20px; vertical-align: bottom; padding-right: 1px; padding-top: 2px; padding-bottom: 2px; display: inline-block;" width="20" /></a>
+                        <br />
+                    </td>
+					</tr>
+				</tbody>
+			</table>
+			</td>
+		</tr>
+	</tbody>
+</table>
