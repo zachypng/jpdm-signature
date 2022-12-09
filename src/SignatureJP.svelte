@@ -1,9 +1,11 @@
 <script>
     export let company = 'Jensen Partners';
     export let fullname;
+    export let pronouns;
     export let title;
     export let email;
     export let phone;
+    export let avatar;
 </script>
 
 <style>
@@ -29,17 +31,25 @@
 <table border="0" cellpadding="0" cellspacing="0" style="width: auto; font-family: arial; font-size: 13px; line-height: 18px; color: #333333; text-decoration: none;" width="auto">
 	<tbody>
 		<tr>
-	<td style="vertical-align: top; padding: 25px 20px 0 10px;" valign="top" width="1"><a href="https://jensen-partners.com"><img src="https://i.imgur.com/ev2sYVe.png" width="50" alt="logo"/></a><br /><br />
-    <a href="http://twitter.com/JensenPartners" target="_blank" rel="noreferrer"><img alt="twitter.png" src="https://i.imgur.com/3h6pPIg.png" style="width: 20px; vertical-align: bottom; padding-right: 1px; padding-top: 2px; padding-bottom: 2px; display: inline-block;" width="20" /></a> 
-    <a href="http://linkedin.com/company/jensen-partners" target="_blank" rel="noreferrer"><img alt="linkedin.png" src="https://i.imgur.com/skVLCU6.png" style="width: 20px; vertical-align: bottom; padding-right: 1px; padding-top: 2px; padding-bottom: 2px; display: inline-block;" width="20" /></a>
+	{#if avatar}
+    <td style="vertical-align: top; padding: 25px 20px 0 10px;" valign="top" width="1"><a href="https://jensen-partners.com"><img src="{avatar}" width="50" alt="logo" class="mask mask-circle"/></a><br /><br />
+    <a href="http://twitter.com/JensenPartners" target="_blank" rel="noreferrer"><img alt="twitter logo" src="./src/images/twitter-circle-filled.svg" style="width: 20px; vertical-align: bottom; padding-right: 1px; padding-top: 2px; padding-bottom: 2px; display: inline-block;" width="20" /></a> 
+    <a href="http://linkedin.com/company/jensen-partners" target="_blank" rel="noreferrer"><img alt="linkedin logo" src="./src/images/linkedin-with-circle.svg" style="width: 20px; vertical-align: bottom; padding-right: 1px; padding-top: 2px; padding-bottom: 2px; display: inline-block;" width="20" /></a>
     <br /><br />
     </td>
+    {:else}
+    <td style="vertical-align: top; padding: 25px 20px 0 10px;" valign="top" width="1"><a href="https://jensen-partners.com"><img src="./src/images/jp-logo.svg" width="50" alt="logo"/></a><br /><br />
+    <a href="http://twitter.com/JensenPartners" target="_blank" rel="noreferrer"><img alt="twitter logo" src="./src/images/twitter-circle-filled.svg" style="width: 20px; vertical-align: bottom; padding-right: 1px; padding-top: 2px; padding-bottom: 2px; display: inline-block;" width="20" /></a> 
+    <a href="http://linkedin.com/company/jensen-partners" target="_blank" rel="noreferrer"><img alt="linkedin logo" src="./src/images/linkedin-with-circle.svg" style="width: 20px; vertical-align: bottom; padding-right: 1px; padding-top: 2px; padding-bottom: 2px; display: inline-block;" width="20" /></a>
+    <br /><br />
+    </td>
+    {/if}
       <td style="vertical-align: top;" valign="top">
             <!-- Second Table start -->
 			<table border="0" cellpadding="0" cellspacing="0" style="vertical-align: top;" valign="top" width="auto">
 				<tbody>
 					<tr style="vertical-align: top;" valign="top">
-						<td><b style="font-style:italic; font-size: larger;">{fullname}</b><br />
+						<td><b style="font-style:italic; font-size: larger;">{fullname} ({pronouns})</b><br />
                         <span>{title} at {company}</span><br />
 						<br />
 						Email: {email}<br />
@@ -57,7 +67,7 @@
 			</td>
 		</tr>
 		<tr>
-			<td colspan="2"><img src="https://i.imgur.com/FkytAzB.png" height="100" alt="banner" class="banner" />
+			<td colspan="2"><img src="./src/images/signature-awards.png" alt="banner" class="banner" />
         </td>
 		</tr>
 	</tbody>
