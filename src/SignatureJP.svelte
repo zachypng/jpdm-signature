@@ -59,7 +59,7 @@
                         Phone: +1 212-457-0062<br />
                         {/if}
 						<br />
-						New York | London | Miami | Hong Kong<br />
+						New York | Miami | London | Hong Kong<br />
 						<a href="https://jensen-partners.com">jensen-partners.com</a><br />
                         <br />
                         <hr>
