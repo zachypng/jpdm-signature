@@ -17,6 +17,11 @@
     let visible2 = false;
     let avatar;
     let fileinput;
+
+    let nameCheck = true;
+    let pronounsCheck = true;
+    let titleCheck = true;
+    let emailCheck = true;
 	
 	const onFileSelected =(e)=>{
         let image = e.target.files[0];
@@ -76,50 +81,75 @@
         <label for="fullname" class="label font-medium pb-1">
             <span class="label-text">Name*</span>
         </label>
-        <input id="fullname" name="fullname" type="text" placeholder="First Last" bind:value={fullname} class="input input-bordered w-full max-w-md" />
+        <input id="fullname" name="fullname" type="text" placeholder="First Last" bind:value={fullname} class="input input-bordered w-full max-w-md {nameCheck ? '' : 'border-error'}" on:blur={() => {
+            if (!fullname.length == 0) {
+                nameCheck = true;
+            }
+            else nameCheck = false;
+        }} />
     </div>
     <div class="form-control w-full max-w-md py-2 mx-auto justify-center">
         <label for="pronouns" class="label font-medium pb-1">
             <span class="label-text">Pronouns*</span>
         </label>
         <label class="input-group max-w-md">
-            <select class="select select-bordered w-1/2 max-w-md" placeholder="Choose an option" bind:value={pronouns}>
+            <select class="select select-bordered w-1/2 max-w-md {pronounsCheck ? '' : 'border-error'}" on:blur={() => {
+                if (!pronouns.length == 0) {
+                    pronounsCheck = true;
+                }
+                else pronounsCheck = false;
+            }} placeholder="Choose an option" bind:value={pronouns}>
                 <option disabled selected value="">Choose an option</option>
                 <option>He/Him/His</option>
                 <option>She/Her/Hers</option>
                 <option>They/Them/Theirs</option>
             </select>
-          <input type="text" placeholder="or enter a custom value" class="input input-bordered w-1/2 max-w-md" bind:value={pronouns}/>
+          <input type="text" placeholder="or enter a custom value" class="input input-bordered w-1/2 max-w-md {pronounsCheck ? '' : 'border-error'}" on:blur={() => {
+            if (!pronouns.length == 0) {
+                pronounsCheck = true;
+            }
+            else pronounsCheck = false;
+        }} bind:value={pronouns}/>
         </label>
       </div>
     <div class="form-control w-full max-w-md py-2 mx-auto justify-center">
         <label for="title" class="label font-medium pb-1">
             <span class="label-text">Title*</span>
         </label>
-        <input id="title" name="title" type="text" placeholder="Job Title" bind:value={title} class="input input-bordered w-full max-w-md" />
+        <input id="title" name="title" type="text" placeholder="Job Title" bind:value={title} class="input input-bordered w-full max-w-md {titleCheck ? '' : 'border-error'}" on:blur={() => {
+            if (!title.length == 0) {
+                titleCheck = true;
+            }
+            else titleCheck = false;
+        }} />
     </div>
     <div class="form-control w-full max-w-md py-2 mx-auto justify-center">
         <label for="email" class="label font-medium pb-1">
             <span class="label-text">Email*</span>
         </label>
-        <input id="email" name="email" type="email" placeholder="example@example.com" bind:value={email} class="input input-bordered w-full max-w-md" />
+        <input id="email" name="email" type="email" placeholder="example@example.com" bind:value={email} class="input input-bordered w-full max-w-md {emailCheck ? '' : 'border-error'}" on:blur={() => {
+            if (!email.length == 0) {
+                emailCheck = true;
+            }
+            else emailCheck = false;
+        }} />
     </div>
     <div class="form-control w-full max-w-md py-2 mx-auto justify-center">
         <label for="phone" class="label font-medium pb-1">
-            <span class="label-text">Mobile Phone*</span>
+            <span class="label-text">Mobile Phone (not required)</span>
         </label>
-        <input id="phone" name="phone" type="tel" placeholder="+1 999-999-9999" bind:value={phone} class="input input-bordered w-full max-w-md" />
+        <input id="phone" name="phone" type="tel" placeholder="+1 999-999-9999" bind:value={phone} class="input input-bordered w-full max-w-md " />
     </div>
     <div class="form-control w-full max-w-md py-2 mx-auto justify-center">
         <label for="avatar" class="label font-medium pb-1">
             <span class="label-text">Custom Avatar (not required)</span>
         </label>
-        <input id="avatar" name="avatar" type="file" class="file-input file-input-bordered w-full max-w-md" accept=".jpg, .jpeg, .png, .svg" on:change={(e)=>onFileSelected(e)} bind:value={fileinput} />
+        <input id="avatar" name="avatar" type="file" class="file-input file-input-bordered w-full max-w-md " accept=".jpg, .jpeg, .png, .svg" on:change={(e)=>onFileSelected(e)} bind:value={fileinput} />
     </div>
 </form>
 <hr class="w-12 mt-2 mx-auto border-info">
 
-<div class="max-w-2xl rounded-md mx-auto bg-primary-content h-auto mt-8 mb-8">
+<div class="max-w-2xl rounded-md mx-auto bg-primary-content h-auto mt-8 mb-8 border border-base-200">
     <div class="w-full bg-base-200 py-3 rounded-t h-auto">
         <h3 class="text-lg font-bold mx-auto max-w-md">Generated Jensen Partners Signature</h3>
         <div class="w-full max-w-lg pt-3 mx-auto">
@@ -150,7 +180,7 @@
             </div>
     </div>
 </div>
-<div class="max-w-2xl rounded-md mx-auto bg-primary-content h-auto mb-8">
+<div class="max-w-2xl rounded-md mx-auto bg-primary-content h-auto mb-8 border border-base-200">
     <div class="w-full bg-base-200 py-3 rounded-t h-auto">
         <h3 class="text-lg font-bold mx-auto max-w-md">Generated DiversityMetrics Signature</h3>
         <div class="w-full max-w-lg pt-3 mx-auto">

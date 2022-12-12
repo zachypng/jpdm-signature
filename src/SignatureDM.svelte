@@ -53,9 +53,13 @@
                         <span>{title} at {company}</span><br />
 						<br />
 						Email: {email}<br />
+                        {#if phone}
 						Phone: +1 212-457-0062 | Mobile: {phone}<br />
+                        {:else}
+                        Phone: +1 212-457-0062<br />
+                        {/if}
 						<br />
-						200 Park Avenue, Suite 1700 New York, NY 10166<br />
+						New York | London | Miami | Hong Kong<br />
                         <a href="https://jensendiversitymetrics.com">jensendiversitymetrics.com</a><br />
 						<br />
                         <hr>
